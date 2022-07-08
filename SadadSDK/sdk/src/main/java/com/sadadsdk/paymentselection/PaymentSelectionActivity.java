@@ -105,7 +105,8 @@ public class PaymentSelectionActivity extends BaseActivity implements View.OnCli
         Button btnCancel = bottomSheetDialog.findViewById(R.id.btnCancel);
         LinearLayoutCompat llCreditCard = bottomSheetDialog.findViewById(R.id.llCreditCard);
         LinearLayoutCompat llDebitCard = bottomSheetDialog.findViewById(R.id.llDebitCard);
-        LinearLayoutCompat llPaySadad = bottomSheetDialog.findViewById(R.id.llPaySadad);
+        LinearLayoutCompat llPaySadad = null;
+        llPaySadad.setVisibility(View.INVISIBLE)
 
         if (btnCancel != null) {
             btnCancel.setOnClickListener(this);
